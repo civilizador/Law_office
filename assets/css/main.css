@@ -1,0 +1,112 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{ background: none;}
+
+#header {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  z-index: 100;
+  top:0px;
+  background-color: black;
+  
+}
+
+/* CAROUSEL */
+#demo {height: 100vh;}
+
+.carousel {
+    position:absolute !important; 
+    width: 100% !important; 
+    top:0;    
+}
+
+.carousel_image {
+   width: 100% !important; 
+   display: flex;
+   overflow: hidden;
+   align-items: center !important; 
+}
+/* END OF CAROUSEL */
+
+
+
+/*  NAVBAR */
+.navbar-brand {
+  font-size: 2.5em !important;
+  font-weight: bold;
+  color: white !important;
+  margin-right: 45px !important;
+  margin-left: 45px !important;
+}
+
+nav {
+    width:100% !important;
+    height: 65px !important;
+    position: absolute;
+    top: 40px;
+    text-align: right;
+    margin-left: auto;
+    z-index: 10;
+}
+
+a.nav-link:hover  {
+  color: #c99947 !important;
+  text-decoration: underline !important;
+  border-bottom: 2px solid #c99947 !important;
+}
+a.nav-link {
+  transition: 1s border-bottom;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  color: white !important;
+  padding-top: 20px;
+}
+
+/* rows */
+div.dropdown-multicol{
+  width: 30em;
+}
+div.dropdown-row>a.dropdown-item{
+  display:inline-block;
+  width: 32%;
+}
+ 
+/* Columns */
+div.dropdown-multicol2{
+  width: 30em;
+}
+
+div.dropdown-multicol2>div.dropdown-col{
+  display:inline-block;
+  width: 32%;
+
+}
+.dropdown-col {
+vertical-align:top;
+}
+
+/* SECTIONS  */
+.section_wrapper {
+  height: 100vh;
+}
+#home_section {
+   height: 100vh;
+}
+
+
+
+/* .navbar.transparent.navbar-light .navbar-expand-lg {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+} */
+
+
+
