@@ -98,20 +98,42 @@ vertical-align:top;
    height: 100vh;
 }
 
-.float_left{
-  float: left;
+
+.card {
+  width: 22rem !important;
+  margin-left: 4rem !important;
+  height: 70% !important;
+   
+}
+
+img.card-img-top{
+    border-radius: 50%;
+  display: inline-block;
 }
 
 
-/* .navbar.transparent.navbar-light .navbar-expand-lg {
-    border-width: 0px;
-    -webkit-box-shadow: 0px 0px;
-    box-shadow: 0px 0px;
-    background-color: rgba(0,0,0,0.0);
-    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
-    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
-} */
+/* Pre sets */
 
+.float_left{
+  float: left;
+}
+.height_30 {
+  height: 30vh;
+  border: 2px solid black;
+}
+.height_70 {
+  height: 70vh;
+  border: 2px solid black;
+}
+.height_20 {
+  height: 20vh;
+  border: 2px solid black;
+}
+.height_80 {
+  height: 80vh;
+  border: 2px solid black;
+}
 
-
+.centered_div {
+  margin: 0 auto;
+}
