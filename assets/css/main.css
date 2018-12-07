@@ -2,7 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body{ background: none;}
+body { background: none;
+padding: 0;
+  margin: 0;
+}
 
 #header {
   width: 100%;
@@ -15,21 +18,22 @@ body{ background: none;}
 }
 
 /* CAROUSEL */
-#demo {height: 100vh;}
+#demo {height: 768px;}
 
 .carousel {
-    position:absolute !important; 
+
     width: 100% !important; 
-    top:0;    
-    height: 100vh;
+    height: 768px !important; 
 }
 
 .carousel_image {
-   width: 100% !important; 
-   display: flex;
-   overflow: hidden;
-   align-items: center !important; 
-  height: 100vh;
+    width: 100% !important; 
+    height: 768px;
+    display: flex;
+    overflow: hidden;
+    align-items: center !important; 
+  margin: 0 !important
+
 }
 /* END OF CAROUSEL */
 
@@ -47,8 +51,10 @@ body{ background: none;}
 nav {
     width:100% !important;
     height: 65px !important;
-    position: absolute;
-    top: 40px;
+    position: fixed !important;
+    top: 40px !important;
+
+  
     text-align: right;
     margin-left: auto;
     z-index: 10;
@@ -91,49 +97,50 @@ vertical-align:top;
 }
 
 /* SECTIONS  */
+
 .section_wrapper {
-  height: 100vh;
+    height: auto;
+   min-height: 768px !important;
+}
+#partners {
+  background-image: url("https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
 }
 #home_section {
-   height: 100vh;
+   height: auto;
+   min-height: 768px !important;
 }
 
 
 .card {
-  width: 22rem !important;
-  margin-left: 4rem !important;
-  height: 70% !important;
-   
+  color: white;.
+  margin-top: 10% !important;
+  height: 80% !important;
+  border: none !important;
+  text-align: center !important;
+  background: none !important;
+  background-color:none !important;
 }
 
 img.card-img-top{
+  margin-top: 10% !important;
+    border: 2px solid white !important;
     border-radius: 50%;
-  display: inline-block;
+    display: inline-block;
+    margin: 0 auto;
+  
 }
 
 
 /* Pre sets */
-
+.round_image {
+  border-radius: 50% !important;
+  width: 150px !important;
+  height: 150px !important;
+}
 .float_left{
   float: left;
 }
-.height_30 {
-  height: 30vh;
-  border: 2px solid black;
-}
-.height_70 {
-  height: 70vh;
-  border: 2px solid black;
-}
-.height_20 {
-  height: 20vh;
-  border: 2px solid black;
-}
-.height_80 {
-  height: 80vh;
-  border: 2px solid black;
-}
-
 .centered_div {
-  margin: 0 auto;
+  margin: 0 auto !important;
+  text-align: center !important;
 }
