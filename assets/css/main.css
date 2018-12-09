@@ -51,10 +51,8 @@ padding: 0;
 nav {
     width:100% !important;
     height: 65px !important;
-    position: fixed !important;
+    position: absolute !important;
     top: 40px !important;
-
-  
     text-align: right;
     margin-left: auto;
     z-index: 10;
@@ -90,7 +88,6 @@ div.dropdown-multicol2{
 div.dropdown-multicol2>div.dropdown-col{
   display:inline-block;
   width: 32%;
-
 }
 .dropdown-col {
 vertical-align:top;
@@ -99,21 +96,36 @@ vertical-align:top;
 /* SECTIONS  */
 
 .section_wrapper {
-    height: auto;
-   min-height: 768px !important;
+  height: auto;
+  min-height: 768px !important;
+  background-size: cover;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 #partners {
-  background-image: url("https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")
+  background-image: url("images/sud1.jpg");
+  width:100%;
+  height: 100%;
 }
 #home_section {
-   height: auto;
-   min-height: 768px !important;
+  height: auto;
+  min-height: 768px !important;
+}
+#services {
+  height: auto;
+  min-height: 768px !important;
+}
+#team {
+  height: auto;
+  min-height: 768px !important;
+  
 }
 
+/* CARD SETTINGS */
 
 .card {
-  color: white;.
-  margin-top: 10% !important;
+  color: white;
+  margin-top: 2% !important;
   height: 80% !important;
   border: none !important;
   text-align: center !important;
@@ -121,15 +133,39 @@ vertical-align:top;
   background-color:none !important;
 }
 
-img.card-img-top{
+.card-title.black {
+    color: black !important;
+}
+
+.card-body.gray { 
+  background-color: rgb(96,96,96);
+  height: 20% !important;
+}
+
+.white {color: white;}
+
+.customniy  {
+  width:100% !important;
+  padding-left: 5%;
+  margin: 0 auto;
+}
+
+img.card-img-top.round_image{
   margin-top: 10% !important;
     border: 2px solid white !important;
     border-radius: 50%;
     display: inline-block;
     margin: 0 auto;
-  
 }
 
+.card.small_card {
+  height: 320px !important;
+}
+
+.small_image {
+  height: 80% !important;
+}
+/*End of CARD Settings*/
 
 /* Pre sets */
 .round_image {
@@ -143,4 +179,10 @@ img.card-img-top{
 .centered_div {
   margin: 0 auto !important;
   text-align: center !important;
+}
+
+/* Images and Logos */
+#huquq_logo {
+  width: 200px;
+  height: 40px;
 }
