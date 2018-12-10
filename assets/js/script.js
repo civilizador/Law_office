@@ -41,9 +41,9 @@ function myFunction3() {
 };
 
 function myFunction4() {
-  var dots4 = document.getElementById("dots1");
-  var moreText4 = document.getElementById("more1");
-  var btnText4 = document.getElementById("myBtn1");
+  var dots4 = document.getElementById("dots4");
+  var moreText4 = document.getElementById("more4");
+  var btnText4 = document.getElementById("myBtn4");
 
   if (dots4.style.display === "none") {
     dots4.style.display = "inline";
@@ -67,3 +67,8 @@ function myFunction5() {
     moreText5.style.display = "inline";
   }
 }
+
+
+
+
+
