@@ -1,8 +1,14 @@
 .news_container    {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    
+}
+.news_row {
+  height: 450px;
+ 
+  margin-bottom: 25px;
 }
 .news_image {
-    width: 70% !important;
+    width: 100% !important;
     margin: 0 auto;
 }
