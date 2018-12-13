@@ -8,6 +8,7 @@ body { background: none;
   font-family: "Calibri Light", sans-serif !important;
 }
 
+
 #header {
   width: 100%;
   height: 35px;
@@ -15,39 +16,67 @@ body { background: none;
   z-index: 100;
   top:0px;
   background-color: black;
-  
+  color:white;
+  padding-left: 15rem;
 }
 
+#footer {
+  width: 100%;
+  height: 35px;
+  position: relative;
+  z-index: 100;
+  bottom:0px;
+  background-color: black;
+  color:white;
+  padding-left: 15rem;
+}
+
+#haqqimizda_yazi_2 {
+  overflow-y: hiden;
+  font-size: 14px;
+}
+#haqqimizda_yazi {
+  overflow-y: hiden;
+  font-size: 14px;
+}
 /* CAROUSEL */
-#demo {height: 1024px;}
+#demo {height: 100vh;
+      min-height: 768px !important;
+      width: 100% !important;
 
-.carousel {
-
-    width: 100% !important; 
-    height: 1024px !important; 
 }
 
 .carousel_image {
-    width: 100% !important; 
-    height: 1024px !important; 
+  height: 100vh;
+  width: 100% !important;
+  min-height: 768px !important;
     display: flex;
     overflow: hidden;
-    align-items: center !important; 
+    align-items: center !important;
     margin: 0 !important
+}
 
+.carousel-caption {
+  margin-bottom: 65vh;
+}
+
+.carousel_link_button {
+  color: silver !important;
 }
 /* END OF CAROUSEL */
 
-
-
 /*  NAVBAR */
 .navbar-brand {
-  font-size: 3.5em !important;
+  font-size: 2.8em !important;
   font-weight: bold;
   color: white !important;
-  margin-right: 15% !important;
-  margin-left: 75px !important;
+  margin-right: 6% !important;
+  margin-left: 10% !important;
 }
+
+.justify {
+    text-align: justify;
+    }
 
 nav {
     width:100% !important;
@@ -59,7 +88,6 @@ nav {
     z-index: 10;
 }
 
-
 a.nav-link:hover  {
   color: #c99947 !important;
   text-decoration: underline !important;
@@ -70,62 +98,50 @@ a.nav-link {
   -webkit-transition: 1s ease;
   transition: 1s ease;
   color: white !important;
-  font-size: 1.6em;
+  font-size: 1em;
   padding-top: 20px;
 }
 
-/* rows */
-div.dropdown-multicol{
-  width: 30em;
+#fon_dla_menu {
+  height: 80px !important;
+  width: 100%;
+  position: absolute !important;
+  top: 40px !important;
+  z-index: 9;
+  background-color: gray;
+  opacity: 0.4;
 }
-div.dropdown-row>a.dropdown-item{
-  display:inline-block;
-  width: 32%;
-}
- 
 
 
 /* SECTIONS  */
 
-.section_wrapper {
-  height: auto;
-  min-height: 900px !important;
-  background-size: cover;
-  margin-bottom: 10px;
-  margin-top: 10px;
+section {
+  margin-bottom: 5vh;
+  height: 100vh;
+  min-height: 768px !important;
+}
+#services {
+  margin-bottom: 15vh !important;
 }
 #partners {
   background-image: url("images/sud1.jpg");
-  width:100%;
-  height: 100%;
+ background-size: cover;
 }
-#home_section {
-  height: auto;
-  min-height: 800px !important;
-}
-#services {
-  height: auto;
-  min-height: 768px !important;
-}
-#news {
-  height: auto;
-  min-height: 900px !important;
+#about {
+  overflow-y: hidden;
 }
 #contact {
   background-image: url("images/contact_us.jpg");
-  width:100%;
-  height: 1024px;
-  background-size: 120%;
 }
 #questions  {
+  height: auto !important;
+  min-height: 800px !important;
   padding-top: 5%;
   margin-bottom: 5%;
+  font-size: 12px !important;
 }
 /*CONTACT FORM*/
 
-#contact_form {
-  padding-top: 25% !important;
-}
 .btn.btn-lg.btn-danger {width: 100%;}
 
 
@@ -142,33 +158,35 @@ div.dropdown-row>a.dropdown-item{
   font-size: 1.2em;
 }
 
-  .black {
+.black {
     color: black !important;
 }
 
-.gray { 
+.gray {
   background-color: rgb(96,96,96);
    padding: 0 !important;
    margin: 0 !important;
-   height: 4vh !important;
+   height: 5vh !important;
    line-height: 1 !important;
 }
 
-.gray_large { 
-  background-color: rgb(96,96,96);
-  height: 30% !important;
-  padding: 50px !important;
-     line-height: 1 !important;
-
+.gray_large {
+  background-color: rgba(96,96,96,05);
+  height: 5vh !important;
+  line-height: 1 !important;
 }
 
-.white {color: white !important;}
+.white {
+  color: white !important;
+}
 
 .customniy  {
-  width:80% !important;
-  height: 90%;
+  height: 80vh;
+  min-height: 660px;
+  width:90% !important;
   margin: 0 auto;
   margin-top:2%;
+
 }
 
 img.card-img-top.round_image{
@@ -191,18 +209,14 @@ img.card-img-top.round_image{
 .float_left{
   float: left;
 }
-.left {
-  text-align: left;
-}
 .centered_div {
   margin: 0 auto !important;
   text-align: center !important;
 }
-#allnews_btn  { 
-  width:25% !important;
-  margin-top: 2vh !important;
-  margin-bottom: 5vh !important;
-  
+#allnews_btn  {
+  width:28% !important;
+  margin:0 auto;
+  margin-top: 4vh !important;
 }
 /* Images and Logos */
 #huquq_logo {
@@ -210,10 +224,22 @@ img.card-img-top.round_image{
   height: 40px;
 }
 
+#news {
+  margin-bottom: 10vh !important;
 
+}
 
 .moreless {
   display: none;
-    font-size: 2em !important;
+    font-size: 1.5em !important;
+}
 
+#haqqimizida_shekil_sag {
+  height: 100%;
+  width: 100%;
+  max-height: 85vh;
+}
+.fa-plus {
+  padding-top: 2px !important;
+  font-size: 0.5em !important;
 }
